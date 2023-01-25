@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+
+@import "./fontawesome/css/fontawesome.css";
+@import "./fontawesome/css/brands.css";
+@import "./fontawesome/css/solid.css";
+
+@import './components/components.scss';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #31335aaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.main {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+header {
+  height: 200px;
+  padding: 25px;
+  background-color: rgba(72, 199, 142, 1);
+  border-radius: 0 0 40% 40%;
+  /* center title */
+  display: grid;
+  grid-template-columns: 25% 1fr 25%;
+
+  .title {
+    div {
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    div:first-child {
+      font-size: 1em;
+
+      div {
+        display: inline;
+      }
+
+      span {
+        display: inline-block;
+        background-color: white;
+        color: rgba(72, 199, 142, 1);
+        font-weight: bold;
+        font-size: 2em;
+        height: 48px;
+        width: 44px;
+        line-height: 36px;
+        margin-left: 12px;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+  }
+}
+
+nav {
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+nav a.router-link-exact-active {
+  color: var(--color-text);
+}
+
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+
+nav a {
+  color: var(--vt-c-white);
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+
+  &:hover {
+    color: green;
+    background-color: transparent;
+  }
+}
+
+nav a:first-of-type {
+  border: 0;
+}
+
+.content {
+  flex: 1;
+  max-width: 80%;
+  min-width: 1280px;
+  margin: 1rem auto 0;
+
+  @media (max-width: 1280px) {
+    max-width: 90%;
+  }
+}

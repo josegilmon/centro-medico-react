@@ -1,0 +1,13 @@
+footer {
+  background-color: rgba(72, 199, 142, 1);
+  padding: 3rem 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  .rrss {
+    a {
+      color: white;
+      padding: 10px;
+    }
+  }
+}
