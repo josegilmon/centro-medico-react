@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Serve React Front-end",
+            "type": "command",
+            "workingDir": "$PROJECT_DIR$/",
+            "program": "$USER_HOME$/AppData/Roaming/nvm/v17.9.0/npm.cmd",
+            "args": ["run", "dev"], // Write here your needed args
+        },
+    ]
+}
